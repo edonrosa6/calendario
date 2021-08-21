@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="py-5">
+        <div class="container">
+            <h1 class="text-blue">Calendario</h1>
+            <div class="row mt-5">
+                <div class="col-md-4 bg-blue" style="border-radius: 5px;">
+                    <div>
+                        <h1 class="text-light text-right mr-3" style="font-size: 130px; padding-bottom: 0; margin-bottom: 0;" id="day"></h1>
+                        <h2 class="text-light text-right mr-3 text-capitalize" id="nombreDia"></h2>
+                        <div class="d-flex" style="flex-direction: row-reverse;">
+                            <p class="text-light text-right mr-3 lead" id="year"></p>
+                            <p class="text-light text-right mr-2 lead text" id="nombreMes"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8" style="background-color: #fff; border-radius: 5px;">
+                    <table class="table mt-4">
+                        <thead class="text-center text-blue" >
+                          <tr>
+                            <th scope="col">Dom</th>
+                            <th scope="col">Lun</th>
+                            <th scope="col">Mar</th>
+                            <th scope="col">Mié</th>
+                            <th scope="col">Jue</th>
+                            <th scope="col">Vie</th>
+                            <th scope="col">Sáb</th>
+                          </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr id="daysOfWeek">
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                              <td>29</td>
+                              <td>30</td>
+                              <td>31</td>
+                              <td class="text-muted" style="background-color: #f3f3f3; cursor:not-allowed;">1</td>
+                              <td class="text-muted" style="background-color: #f3f3f3; cursor:not-allowed;">2</td>
+                              <td class="text-muted" style="background-color: #f3f3f3; cursor:not-allowed;">3</td>
+                              <td class="text-muted" style="background-color: #f3f3f3; cursor:not-allowed;">4</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

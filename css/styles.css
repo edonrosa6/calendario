@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mainColor: #003390;
+}
+body {
+  background-color: #f3f3f3;
+}
+h1,
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+}
+
+.text-blue {
+  color: var(--mainColor);
+}
+
+.bg-blue {
+  background: linear-gradient(49deg, var(--mainColor), #00256b);
+}
+
+td:hover {
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
+td {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.table td,
+.table th {
+  padding: 0.4rem;
+  border-right: 2px solid #f3f3f3;
+}
