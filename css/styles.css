@@ -7,10 +7,11 @@
   --mainColor: #003390;
 }
 body {
-  background-color: #f3f3f3;
+  background-color: #cacaca6c;
 }
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 }
@@ -42,4 +43,16 @@ td {
 .table th {
   padding: 0.4rem;
   border-right: 2px solid #f3f3f3;
+}
+
+.content-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1.5rem 0.3rem rgb(0 0 0 / 20%) !important;
 }
